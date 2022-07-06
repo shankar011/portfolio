@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+       body{
+        background: url(./public/images/webbg.jpg);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+       }
+       .navbar{
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+       }
+       .icon{
+        width: 200px;
+        float: left;
+        height: 70
+       }
+       .logo{
+        color: rgb(178, 219, 230);
+        font-size: 40px;
+        font-family: arial;
+        padding-top: 30px;
+        float: left; 
+       }
+      .menu{
+        width: 400px;
+        float: left;
+        height: 70px;
+      }
+      ul{
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: large; 
+      }
+      ul li{
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 44px;
+        font-size: 15px
+      }
+      ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+      }
+      ul li a:hover{
+        color: orangered;
+      }
+     .search{
+        width: 330px;
+        float: left;
+        margin-left: 270px;
+     }
+     .srch{
+        font-family: arial;
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: 3px solid rgb(214, 89, 44);
+        margin-top: 37px;
+        color: white;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+     }
+     .btn{
+        width: 100px;
+        height: 40px;
+        background: orangered;
+        border: 3px solid orangered;
+        margin-top: 37px;
+        color: white;
+        font-size: 15px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+     }
+     .btn:focus{
+        outline: none;
+     }
+     .srch:focus{
+        outline: none;
+     }
+     .content{
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        color: white;
+        position: relative;
+
+     }
+     .content .par{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: arial;
+        line-height: 30px;
+     }
+     .content h1{
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 100px;
+        letter-spacing: 2px;
+     }
+     .content .cn{
+        width: 160px;
+        height: 40px;
+        background: orangered;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+     }
+     .content .cn a{
+        text-decoration: none;
+        color: black;
+        transition: .3 ease;
+     }
+     .cn:hover{
+        background: white;
+     }
+     .content span{
+        color: rgb(231, 41, 41);
+        font-size: 60px;
+     }
+     .form{
+      width: 250px;
+      height: 380px;
+      background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+      position: absolute;
+      top: -20px;
+      left: 870px;
+      border-radius: 10px;
+      padding: 25px;
+      
+     }
+     .form h2{
+      width: 220px;
+      font-family: sans-serif;
+      text-align: center;
+      color: orangered;
+      font-size: 22px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 8px;
+
+     }
+     .form input{
+      width: 240px;
+      height:35px ;
+      background: transparent;
+      border-bottom: 1px solid orangered;
+      border: none;
+      border-right: none;
+      border-left: none;
+      color: white;
+      margin-top: 30px;
+      font-family: sans-serif;
+
+      }
+
+      .form input:focus{
+         outline: none;
+      }
+
+      ::placeholder{
+         color: white;
+         font-family: arial;
+      }
+      .btnn{
+         width: 240px;
+         height: 40px;
+         background: orangered;
+      }
+      .btnn a{
+         text-decoration: none;
+         color: black;
+         font-weight: bold;
+      }
+      .form .link{
+         font-family: arial;
+         font-size: 17px;
+         padding-top: 20px;
+         text-align: center;
+      }
+      .form .link a{
+         text-decoration: none;
+         color: orangered;
+      }
+      .liw{
+         padding-top: 15px;
+         padding-bottom: 10px;
+         text-align: center;
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PaciFic</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li> <a href="#">HOME</a></li>
+                    <li> <a href="#">ABOUT</a></li>
+                    <li> <a href="#">SERVICES</a></li>
+                    <li> <a href="#">DESIGN</a></li>
+                    <li> <a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to Text">
+                <a href="#"> <button class="btn">search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Web Design & <br><span>Development</span><br>Course</h1>
+            <p class="par">Web development is the building and maintenance of websites <br>
+                 it's the work that happens behind the scenes to make a website look great,<br>
+                 work fast and perform well with a seamless user experience</p>
+
+                 <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="Password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a>a Here</a></p>
+                    <p class="liw">Log in With</p>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
