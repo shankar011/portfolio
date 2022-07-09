@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google.com</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: arial, sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        section header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 12px;
+            margin-right: 15px;  
+             }
+
+        section header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section header ul li {
+            margin-left: 20px;
+            list-style: none;
+
+        }
+
+        section header ul li a {
+            text-decoration: none;
+            color: #111;
+            font-size: 13px;
+        }
+
+        section header ul li button {
+            background: #4584ef;
+            border: none;
+            outline: none;
+            padding: 8px 14px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        section .main {
+            width: 580px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -200px;
+        }
+
+        section .main .searchbox{
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+        section .main .searchbox .search{
+            width: 100%;
+            padding: 11px;
+            padding-left: 45px;
+            padding-top: 15px;
+            border-radius: 30px;
+            border: 1px solid#ccc;
+            outline: none;
+            font-size: 16px;
+        }
+        section .main .searchbox .icons{
+            position: absolute;
+            top:0;
+            width: 100%;
+            display: flex;
+            padding: 12px;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none;
+          }
+          section .main .buttons{
+            margin-top: 20px;
+          } 
+          section .main .buttons button{
+            margin: 0 5px;
+            padding: 12px 20px;
+            color: #555;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            outline: none;
+
+          }
+          section .main .buttons button:hover{
+            border: 1px solid#ccc;
+          }
+          section .main .languages{
+            display: flex;
+            margin-top: 30px;
+          }
+          section .main .languages li{
+            list-style: none;
+            margin: 0 4px;
+            font-size: 13px;
+          }
+          section .main .languages li a{
+            text-decoration: none;
+            color: #1a0dab;
+
+          }
+          section .main .languages li a:hover{
+            text-decoration: underline;
+          }
+          section .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #f2f2f2;
+          }
+          section .footer .row{
+            padding: 15px 25px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+          }
+          section .footer .row.row2{
+            display: flex;
+            justify-content: space-between;
+          }
+          section .footer .row.row2 ul{
+            display: flex;
+          }
+          section .footer .row.row2 ul li{
+            list-style: none;
+          }
+          section .footer .row.row2 ul li a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #5f6368;
+            margin-right: 25px;
+          }
+          section .footer .row.row2 ul:nth-child(2) li a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #5f6368;
+            margin-right: 0px; 
+            margin-left: 25px;
+          }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="./images/apps_icon.png" width="25" height="25"></a> </li>
+                <li><button>Sign In</button></li>
+            </ul>
+        </header>
+        <div class="main">
+            <img src="./images/gimg.jpg" width="200" height="100">
+            <div class="searchbox">
+            <input type="text" class="search">
+            <div class="icons">
+                <div><img src="./images/ssearch.jpg" width="28" height="28"></div>
+                <div><img src="./images/mike.jpg"></div>
+            </div>
+            </div>
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+            <ul class="languages">
+                <li>Google offered in:</li>
+                <li><a href="#"> हिन्दी</a></li>
+                <li><a href="#"> বাংলা</a></li>
+                <li><a href="#"> తెలుగు</a></li>
+                <li><a href="#"> मराठी</a></li>
+                <li><a href="#"> தமிழ் </a></li>
+                <li><a href="#"> ગુજરાતી</a></li>
+                <li><a href="#"> ગુજરાતી</a></li>
+                <li><a href="#"> ಕನ್ನಡ</a></li>
+                <li><a href="#"> മലയാള</a></li>
+                <li><a href="#"> ਪੰਜਾਬੀ</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="row row1">
+                <p class="country">India</p>
+            </div>
+            <div class="row row2">
+                <ul>
+                    <li><a href="#">Advertising</a> </li>
+                    <li><a href="#">Bussiness</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">How Search Works</a> </li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacy</a> </li>
+                    <li><a href="#">Terms</a> </li>
+                    <li><a href="#">Setting</a> </li>
+            
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
